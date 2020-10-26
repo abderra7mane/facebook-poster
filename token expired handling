@@ -1,0 +1,65 @@
+
+poster
+    
+    start
+        ...
+        if republish last post
+            result = task.republishToLastTarget
+        else
+            result = task.publishNext
+        ...
+        if not result
+            emit error
+            pause # wait action from datamanager
+            # when awaken
+            if stopped
+                stop on error
+            elif republish last post
+                continue loop
+            else
+                pass ## continue as nothing happened
+
+    update token
+        update graph token
+
+    # nextTaskId
+    #    if republish last post
+    #        return last task
+    #    else
+    #        return new task
+
+
+datamanager
+
+    signal need to refresh token
+
+    on posterError
+        if error is access token expired
+            emit need to refresh token
+        else
+            resume poster
+            emit error
+
+    update access token
+        update profile token
+        if poster exists
+            update poster token
+            set sth to indicate to republish last post
+            resume poster
+
+    on fail to acquire new token
+        stop poster
+        #### emit error fail to acquire new token ### -> go to posterui
+
+
+posterui
+
+    on need to refresh token
+        refresh token
+            if token acquired
+                update datamanager token
+            else
+                inform datamanager of fail to acquire new token
+                show error message
+
+

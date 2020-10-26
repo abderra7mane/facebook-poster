@@ -1,0 +1,15 @@
+
+posterui
+    get user cookies
+    fetch token request url (enable redirects)
+
+    on url changed
+        fetch token
+            token acquired : .... [look 'token expired handling']
+        fetch error
+            on error : .... [look 'token expired handling']
+
+    on load finished
+        get user cookies
+        update current user cookies
+

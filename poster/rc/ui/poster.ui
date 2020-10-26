@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PosterUi</class>
+ <widget class="QMainWindow" name="PosterUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,3,0,1">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="5">
+        <widget class="QLabel" name="connectionStatusLabel">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="aboutButton">
+         <property name="text">
+          <string>About</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../qrc/resources.qrc">
+           <normaloff>:/img/info.png</normaloff>:/img/info.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" colspan="2">
+        <widget class="QLabel" name="userNameLabel">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="loginButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Login</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qrc/resources.qrc">
+             <normaloff>:/img/login.png</normaloff>:/img/login.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="logoutButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Logout</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qrc/resources.qrc">
+             <normaloff>:/img/logout.png</normaloff>:/img/logout.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="6" rowspan="3">
+        <widget class="QLabel" name="profilePictureLabel">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4" colspan="2">
+        <widget class="QLabel" name="userIdLabel">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="3">
+        <widget class="QLabel" name="appLogoLabel">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../qrc/resources.qrc">:/img/icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>353</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="settingsButton">
+         <property name="text">
+          <string>settings</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../qrc/resources.qrc">
+           <normaloff>:/img/settings.png</normaloff>:/img/settings.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="postTabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="addPostButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Add Post</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qrc/resources.qrc">
+            <normaloff>:/img/add.png</normaloff>:/img/add.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="loadPostButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Load Post</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qrc/resources.qrc">
+            <normaloff>:/img/load.png</normaloff>:/img/load.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="savePostButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Save Post</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qrc/resources.qrc">
+            <normaloff>:/img/save.png</normaloff>:/img/save.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="removePostButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Remove Post</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../qrc/resources.qrc">
+            <normaloff>:/img/delete.png</normaloff>:/img/delete.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="minDelayLabel">
+          <property name="text">
+           <string>Min Delay</string>
+          </property>
+          <property name="buddy">
+           <cstring>minDelaySpinBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="minDelaySpinBox">
+          <property name="suffix">
+           <string> s</string>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+          <property name="value">
+           <number>180</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="maxDelayLabel">
+          <property name="text">
+           <string>Max Delay</string>
+          </property>
+          <property name="buddy">
+           <cstring>maxDelaySpinBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="maxDelaySpinBox">
+          <property name="suffix">
+           <string> s</string>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+          <property name="value">
+           <number>300</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="1" column="0">
+         <widget class="QLabel" name="sleepTimeLabel">
+          <property name="text">
+           <string>Sleep</string>
+          </property>
+          <property name="buddy">
+           <cstring>sleepTimeSpinBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="sleepTimeSpinBox">
+          <property name="suffix">
+           <string> s</string>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+          <property name="value">
+           <number>1200</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="sleepAfterLabel">
+          <property name="text">
+           <string>After</string>
+          </property>
+          <property name="buddy">
+           <cstring>sleepAfterSpinBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="sleepAfterSpinBox">
+          <property name="suffix">
+           <string> posts</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+          <property name="value">
+           <number>30</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="posterTimerLabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="text">
+           <string>00:00:00:000</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="posterProgressBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="postToWallCheckBox">
+            <property name="text">
+             <string>Post to my Wall</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="postLikeHumanCheckBox">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Post like Human</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="stopOnErrorsCheckBox">
+            <property name="text">
+             <string>Stop on Errors</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="posterStartButton">
+            <property name="text">
+             <string>Start</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../qrc/resources.qrc">
+              <normaloff>:/img/play.png</normaloff>:/img/play.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="posterPauseButton">
+            <property name="text">
+             <string>Pause</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../qrc/resources.qrc">
+              <normaloff>:/img/pause.png</normaloff>:/img/pause.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="posterResumeButton">
+            <property name="text">
+             <string>Resume</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../qrc/resources.qrc">
+              <normaloff>:/img/resume.png</normaloff>:/img/resume.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="posterCancelButton">
+            <property name="text">
+             <string>Cancel</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../qrc/resources.qrc">
+              <normaloff>:/img/stop.png</normaloff>:/img/stop.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="appLogText">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>frame</zorder>
+   <zorder>appLogText</zorder>
+   <zorder>postTabWidget</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>loginButton</tabstop>
+  <tabstop>logoutButton</tabstop>
+  <tabstop>settingsButton</tabstop>
+  <tabstop>aboutButton</tabstop>
+  <tabstop>postTabWidget</tabstop>
+  <tabstop>addPostButton</tabstop>
+  <tabstop>removePostButton</tabstop>
+  <tabstop>savePostButton</tabstop>
+  <tabstop>loadPostButton</tabstop>
+  <tabstop>minDelaySpinBox</tabstop>
+  <tabstop>maxDelaySpinBox</tabstop>
+  <tabstop>sleepTimeSpinBox</tabstop>
+  <tabstop>sleepAfterSpinBox</tabstop>
+  <tabstop>postToWallCheckBox</tabstop>
+  <tabstop>postLikeHumanCheckBox</tabstop>
+  <tabstop>stopOnErrorsCheckBox</tabstop>
+  <tabstop>posterStartButton</tabstop>
+  <tabstop>posterPauseButton</tabstop>
+  <tabstop>posterResumeButton</tabstop>
+  <tabstop>posterCancelButton</tabstop>
+  <tabstop>appLogText</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../qrc/resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>loginButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>642</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>logoutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>730</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>813</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>posterStartButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>startPosterTask()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>734</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>610</x>
+     <y>462</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>posterPauseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>pausePosterTask()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>813</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>posterResumeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>resumePosterTask()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>892</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>786</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>posterCancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>stopPosterTask()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>971</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>873</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aboutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>about()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addPostButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>addPostTab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removePostButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>removePostTab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savePostButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>savePostToFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>223</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadPostButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>loadPostFromFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PosterUi</receiver>
+   <slot>settings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>98</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>login()</slot>
+  <slot>logout()</slot>
+  <slot>addPostTab()</slot>
+  <slot>removePostTab()</slot>
+  <slot>startPosterTask()</slot>
+  <slot>pausePosterTask()</slot>
+  <slot>resumePosterTask()</slot>
+  <slot>stopPosterTask()</slot>
+  <slot>about()</slot>
+  <slot>savePostToFile()</slot>
+  <slot>loadPostFromFile()</slot>
+  <slot>settings()</slot>
+ </slots>
+</ui>

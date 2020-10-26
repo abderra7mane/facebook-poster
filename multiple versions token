@@ -1,0 +1,19 @@
+
+loginui
+    signal : tokenacquired
+    signal : temptokenacquired
+    signal : finaltokenacquired
+
+    loadtokenurl
+        load temp token url
+        connect : tokenacquired -> temp token acquired
+
+    on temp token acquired
+        emit : temp token acquired
+        disconnect : tokenacquired -> temp token acquired
+        load final token url
+        connect : tokenacquired -> final token acquired
+
+    on final token acquired
+        emit : final token acquired
+        disconnect : tokenacquired -> final token acquired

@@ -1,0 +1,147 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'poster/rc/ui/settings.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_SettingsDialog(object):
+    def setupUi(self, SettingsDialog):
+        SettingsDialog.setObjectName(_fromUtf8("SettingsDialog"))
+        SettingsDialog.resize(326, 237)
+        self.verticalLayout = QtGui.QVBoxLayout(SettingsDialog)
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.tabWidget = QtGui.QTabWidget(SettingsDialog)
+        self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
+        self.basicSettingsTab = QtGui.QWidget()
+        self.basicSettingsTab.setObjectName(_fromUtf8("basicSettingsTab"))
+        self.verticalLayout_2 = QtGui.QVBoxLayout(self.basicSettingsTab)
+        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
+        self.groupBox = QtGui.QGroupBox(self.basicSettingsTab)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.gridLayout = QtGui.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.showAllGroupsCheckBox = QtGui.QCheckBox(self.groupBox)
+        self.showAllGroupsCheckBox.setObjectName(_fromUtf8("showAllGroupsCheckBox"))
+        self.gridLayout.addWidget(self.showAllGroupsCheckBox, 0, 0, 1, 1)
+        self.showLikesCheckBox = QtGui.QCheckBox(self.groupBox)
+        self.showLikesCheckBox.setObjectName(_fromUtf8("showLikesCheckBox"))
+        self.gridLayout.addWidget(self.showLikesCheckBox, 1, 0, 1, 1)
+        self.verticalLayout_2.addWidget(self.groupBox)
+        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem)
+        self.tabWidget.addTab(self.basicSettingsTab, _fromUtf8(""))
+        self.advancedSettingsTab = QtGui.QWidget()
+        self.advancedSettingsTab.setObjectName(_fromUtf8("advancedSettingsTab"))
+        self.verticalLayout_3 = QtGui.QVBoxLayout(self.advancedSettingsTab)
+        self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.enableAdvancedButton = QtGui.QPushButton(self.advancedSettingsTab)
+        self.enableAdvancedButton.setCheckable(True)
+        self.enableAdvancedButton.setObjectName(_fromUtf8("enableAdvancedButton"))
+        self.horizontalLayout_2.addWidget(self.enableAdvancedButton)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+        self.advancedSettingsBox = QtGui.QGroupBox(self.advancedSettingsTab)
+        self.advancedSettingsBox.setEnabled(False)
+        self.advancedSettingsBox.setTitle(_fromUtf8(""))
+        self.advancedSettingsBox.setObjectName(_fromUtf8("advancedSettingsBox"))
+        self.formLayout = QtGui.QFormLayout(self.advancedSettingsBox)
+        self.formLayout.setObjectName(_fromUtf8("formLayout"))
+        self.label = QtGui.QLabel(self.advancedSettingsBox)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.formLayout.setWidget(0, QtGui.QFormLayout.LabelRole, self.label)
+        self.appIDText = QtGui.QLineEdit(self.advancedSettingsBox)
+        self.appIDText.setObjectName(_fromUtf8("appIDText"))
+        self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.appIDText)
+        self.label_2 = QtGui.QLabel(self.advancedSettingsBox)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.formLayout.setWidget(1, QtGui.QFormLayout.LabelRole, self.label_2)
+        self.apiVersionsCombo = QtGui.QComboBox(self.advancedSettingsBox)
+        self.apiVersionsCombo.setObjectName(_fromUtf8("apiVersionsCombo"))
+        self.formLayout.setWidget(1, QtGui.QFormLayout.FieldRole, self.apiVersionsCombo)
+        self.verticalLayout_3.addWidget(self.advancedSettingsBox)
+        spacerItem2 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem2)
+        self.label_3 = QtGui.QLabel(self.advancedSettingsTab)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        self.label_3.setPalette(palette)
+        font = QtGui.QFont()
+        font.setItalic(True)
+        self.label_3.setFont(font)
+        self.label_3.setFrameShape(QtGui.QFrame.Box)
+        self.label_3.setFrameShadow(QtGui.QFrame.Plain)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.verticalLayout_3.addWidget(self.label_3)
+        self.tabWidget.addTab(self.advancedSettingsTab, _fromUtf8(""))
+        self.verticalLayout.addWidget(self.tabWidget)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
+        self.saveButton = QtGui.QPushButton(SettingsDialog)
+        self.saveButton.setDefault(True)
+        self.saveButton.setObjectName(_fromUtf8("saveButton"))
+        self.horizontalLayout.addWidget(self.saveButton)
+        self.cancelButton = QtGui.QPushButton(SettingsDialog)
+        self.cancelButton.setObjectName(_fromUtf8("cancelButton"))
+        self.horizontalLayout.addWidget(self.cancelButton)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.label.setBuddy(self.appIDText)
+        self.label_2.setBuddy(self.apiVersionsCombo)
+
+        self.retranslateUi(SettingsDialog)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QObject.connect(self.saveButton, QtCore.SIGNAL(_fromUtf8("clicked()")), SettingsDialog.accept)
+        QtCore.QObject.connect(self.cancelButton, QtCore.SIGNAL(_fromUtf8("clicked()")), SettingsDialog.reject)
+        QtCore.QObject.connect(self.enableAdvancedButton, QtCore.SIGNAL(_fromUtf8("toggled(bool)")), SettingsDialog.enableAdvancedSettings)
+        QtCore.QMetaObject.connectSlotsByName(SettingsDialog)
+        SettingsDialog.setTabOrder(self.tabWidget, self.showAllGroupsCheckBox)
+        SettingsDialog.setTabOrder(self.showAllGroupsCheckBox, self.enableAdvancedButton)
+        SettingsDialog.setTabOrder(self.enableAdvancedButton, self.appIDText)
+        SettingsDialog.setTabOrder(self.appIDText, self.apiVersionsCombo)
+        SettingsDialog.setTabOrder(self.apiVersionsCombo, self.saveButton)
+        SettingsDialog.setTabOrder(self.saveButton, self.cancelButton)
+
+    def retranslateUi(self, SettingsDialog):
+        SettingsDialog.setWindowTitle(_translate("SettingsDialog", "Dialog", None))
+        self.groupBox.setTitle(_translate("SettingsDialog", "User Information", None))
+        self.showAllGroupsCheckBox.setText(_translate("SettingsDialog", "Show all groups (include closed groups)", None))
+        self.showLikesCheckBox.setText(_translate("SettingsDialog", "Show liked pages", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.basicSettingsTab), _translate("SettingsDialog", "Basic", None))
+        self.enableAdvancedButton.setText(_translate("SettingsDialog", "Enable", None))
+        self.label.setText(_translate("SettingsDialog", "Application ID", None))
+        self.label_2.setText(_translate("SettingsDialog", "Default Graph API version", None))
+        self.label_3.setText(_translate("SettingsDialog", "edit this settings with caution", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.advancedSettingsTab), _translate("SettingsDialog", "Advanced", None))
+        self.saveButton.setText(_translate("SettingsDialog", "Save", None))
+        self.cancelButton.setText(_translate("SettingsDialog", "Cancel", None))
+

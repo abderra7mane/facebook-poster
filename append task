@@ -1,0 +1,13 @@
+
+save button
+    if saved emit saved
+
+posterui
+    on post saved
+        msgbox : ask if append post
+            yes :
+                append task
+                update progress
+            no :
+                do nothing
+

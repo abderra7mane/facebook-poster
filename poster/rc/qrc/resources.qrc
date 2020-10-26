@@ -1,0 +1,34 @@
+<RCC>
+  <qresource prefix="img">
+    <file alias="login.png">../img/login.png</file>
+    <file alias="logout.png">../img/logout.png</file>
+    <file alias="load.png">../img/load.png</file>
+    <file alias="save.png">../img/save.png</file>
+    <file alias="add.png">../img/add.png</file>
+    <file alias="new.png">../img/new.png</file>
+    <file alias="delete.png">../img/delete.png</file>
+    <file alias="exit.png">../img/exit.png</file>
+    <file alias="info.png">../img/info.png</file>
+    <file alias="test.png">../img/test.png</file>
+	  <file alias="reload.png">../img/reload.png</file>
+	  <file alias="cancel.png">../img/cancel.png</file>
+	  <file alias="forward.png">../img/forward.png</file>
+	  <file alias="default-profile.png">../img/default-profile.png</file>
+    <file alias="icon.png">../img/icon.png</file>
+    <file alias="loading.gif">../img/loading.gif</file>
+    <file alias="lock-closed.png">../img/lock-closed.png</file>
+    <file alias="lock-open.png">../img/lock-open.png</file>
+    <file alias="play.png">../img/play.png</file>
+    <file alias="pause.png">../img/pause.png</file>
+    <file alias="resume.png">../img/resume.png</file>
+    <file alias="stop.png">../img/stop.png</file>
+    <file alias="splash.png">../img/splash.png</file>
+    <file alias="settings.png">../img/settings.png</file>
+  </qresource>
+  <qresource prefix="qss">
+	<file alias="style.qss">../styles/style.qss</file>
+  </qresource>
+  <qresource prefix="asc">
+	<file alias="public.asc">../asc/public.asc</file>
+  </qresource>
+</RCC>
